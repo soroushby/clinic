@@ -1,54 +1,106 @@
+// a {
+//     text-decoration: none;
+//     color: white;
+//     font-size: 2.2rem;
+//   }
 
+mat-sidenav-container,
+mat-sidenav-content,
+mat-sidenav {
+  height: 95vh;
+}
 
-a {
-    text-decoration: none;
-    color: white;
-    font-size: 2.2rem;
-  }
+mat-sidenav-container {
+  background-image: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 9) 0%,
+      rgba(255, 255, 255, 9) 40%,
+      transparent 50%
+    ),
+    url(src\assets\birth.jpg);
+  background-size: cover;
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 95vh;
+}
+
+mat-sidenav {
+  width: 25rem;
+}
+
+//   a:hover,
+//   a:active {
+//     color: rgb(22, 18, 18);
+//   }
+
+//   .nav-caption {
+//     display: inline-block;
+//     padding-left: 6px;
+//   }
+
+//   .sidnav {
+//     height: 95vh;
+//     background-color: transparent;
+//   }
+
+//   .header {
+//     background-image:
+//     linear-gradient(
+//         0deg,
+//         rgba(255, 255, 255, 9) 0%,
+//         rgba(255, 255, 255, 9) 40%,
+//         transparent 40%
+//       ),
+//       url(src\assets\birth.jpg);
+//     background-size: cover;
+//     background-size: 100% ;
+//     background-position: top;
+//     background-repeat: no-repeat;
+//     width:100vw;
+//     height:100vh;
+
+//     //position: relative;
+//   }
+
+//   .btn-position{
+//       margin:2rem;
+//       position: fixed;
+//   }
+ mat-card-content{
+    font-size: 1.8rem ;
+ }
+ .card-button{
+     width:30rem;
+ }
+.cards {
+ height: 95vh;
+  width: 98%;
+
+}
+
+.card {
+   
+    //transform: translateY(50%);
+  width: 45rem;
+  height: 30rem;
   
-  mat-sidenav-container,
-  mat-sidenav-content,
-  mat-sidenav {
-    height: 100%;
-    background-color: transparent;
-  }
-  
-  mat-sidenav {
-    width: 250px;
-    background-color: transparent;
-  }
-  
-  a:hover,
-  a:active {
-    color: rgb(22, 18, 18);
-  }
-  
-  .nav-caption {
-    display: inline-block;
-    padding-left: 6px;
-  }
-  
-  .sidnav {
+  background-color: rgba(14, 170, 61, 0.562);
+}
+
+//   .card-button{
+//       width:25rem
+//   }
+
+.fullpage{
+    
     height: 95vh;
-    background-color: transparent;
-  }
-  
-  .header {
-    background-image: 
-    linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 9) 0%,
-        rgba(255, 255, 255, 9) 40%,
-        transparent 60%
-      ),
-      url(src\assets\birth.jpg);
-    background-size: cover;
-    background-size: 100%;
-    background-position: top;
-    background-repeat: no-repeat;
-    //position: relative;
-  }
-  
-  .btn-position{
-      margin:2rem
-  }
+
+}
+
+.nav{
+    width: 98%;
+    margin: 2rem;
+}

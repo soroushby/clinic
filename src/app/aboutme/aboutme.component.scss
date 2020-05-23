@@ -1,0 +1,66 @@
+
+mat-sidenav-container,
+mat-sidenav-content,
+mat-sidenav {
+  height: 95vh;
+}
+
+mat-sidenav-container {
+  background-image: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 9) 0%,
+      rgba(255, 255, 255, 9) 40%,
+      transparent 50%
+    ),
+    url(src\assets\about.jpg);
+  background-size: cover;
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 95vh;
+}
+
+mat-sidenav {
+  width: 25rem;
+}
+
+.nav {
+  width: 98%;
+  margin:2rem;
+}
+
+.cards {
+  height: 95vh;
+  width: 98%;
+}
+
+.card {
+  //transform: translateY(50%);
+  margin-left: 15rem;
+  width: 40rem;
+  height: 60rem;
+  background-color:rgba(0, 0, 255, 0.473);
+}
+
+.card1{
+    //transform: translateY(50%);
+    width: 80rem;
+    min-height: auto;
+    background-color:rgba(0, 0, 255, 0.473);
+  }
+  
+
+
+.aboutme-btn{
+    background-color: rgba(209, 212, 212, 0.884);
+    width: 70rem;
+    border: 0.1rem solid black;
+}
+
+.message{
+    color: white;
+    font-size: 1.6rem;;
+}
+

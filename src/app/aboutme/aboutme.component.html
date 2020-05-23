@@ -1,0 +1,97 @@
+<mat-sidenav-container class="container">
+    <mat-sidenav #sidenav>
+      <mat-nav-list class="margintop">
+        <a mat-list-item routerLink="/home" (click)="sidenav.close()">
+          <mat-icon>home</mat-icon> <span class="nav-caption">Home</span>
+        </a>
+        <a mat-list-item routerLink="/aboutme" (click)="sidenav.close()">
+          <mat-icon>people</mat-icon>
+          <span class="nav-caption">About Me</span>
+        </a>
+        <a mat-list-item routerLink="/contactus" (click)="sidenav.close()">
+          <mat-icon>email</mat-icon>
+          <span class="nav-caption">Contact Me</span>
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="fullpage">
+      <div class="nav" fxLayout="row" fxLayoutAlign="space-between center">
+        <button class="btn-position" mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+  
+        <button class="btn-position" mat-icon-button (click)="sidenav.toggle()">
+          LOGO
+        </button>
+      </div>
+  
+      <div class="cards" fxLayoutAlign="space-between center" fxLayoutGap="10rem">
+        <mat-card class="card" fxLayoutAlign="start center" fxLayout="column">
+          <mat-card-header>
+            <mat-card-title>About me</mat-card-title>
+          </mat-card-header>
+  
+          <mat-card-content>
+            <p>
+              The Shiba Inu is the smallest of the six original and distinct spitz
+              breeds of dog from Japan. A small, agile dog that copes very well
+              with mountainous terrain, the Shiba Inu was originally bred for
+              hunting.
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button class="card-button" fxLayoutAlign="center center" routerLink="/aboutme">
+              Continue
+            </button>
+          </mat-card-actions>
+        </mat-card>
+  
+        <mat-card class="card1" fxLayoutAlign="start start" fxLayout="column">
+          <mat-card-header>
+            <mat-card-title></mat-card-title>
+          </mat-card-header>
+  
+          <mat-card-content fxLayout="column" fxLayoutAlign="start start" >
+            <mat-list role="list" fxLayoutGap="1rem" fxLayout="column" fxLayoutAlign="start start">
+                <button mat-raised-button class="aboutme-btn" (click)="showEducation()" >
+                    <mat-list-item role="listitem">
+                        <mat-icon>add</mat-icon> Education
+                    </mat-list-item>
+                </button>
+
+                <div *ngIf="showMessageEducation" class="message">Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Magni officiis omnis, voluptatibus ipsum iusto
+                     fuga soluta nihil ullam enim molesti
+                     as nobis eveniet error porro consequuntur recusandae eum esse accusamus ad?</div>
+                <button mat-raised-button class="aboutme-btn" (click)="showBiography()">
+                    <mat-list-item role="listitem">
+                        <mat-icon>add</mat-icon>Biography
+                    </mat-list-item>
+                </button>
+
+                <div *ngIf="showMessageBiography" class="message">this is test</div>
+                <button mat-raised-button class="aboutme-btn" (click)="showExperience()">
+                    <mat-list-item role="listitem">
+                        <mat-icon>add</mat-icon> Experience
+                    </mat-list-item>
+                </button>
+
+                <div *ngIf="showMessageExperience"class="message">this is test</div>
+
+                <button mat-raised-button class="aboutme-btn" (click)="showMedical()">
+                    <mat-list-item role="listitem">
+                        <mat-icon>add</mat-icon>  Medical Interests
+                    </mat-list-item>
+                </button>
+
+                <div *ngIf="showMessageMedical" class="message">this is test</div>
+            
+            
+              </mat-list>
+          </mat-card-content>
+          <mat-card-actions> </mat-card-actions>
+        </mat-card>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  

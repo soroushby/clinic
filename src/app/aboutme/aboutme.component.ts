@@ -6,10 +6,36 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./aboutme.component.scss']
 })
 export class AboutmeComponent implements OnInit {
-
+  showMessageEducation:boolean = false
+  showMessageBiography:boolean = false
+  showMessageExperience:boolean = false
+  showMessageMedical:boolean = false
   constructor() { }
 
   ngOnInit(): void {
+    
+
+    }
+    
+    showEducation(){
+    this.showMessageEducation = !this.showMessageEducation
+   
+    }
+
+    showBiography(){
+      this.showMessageBiography = !this.showMessageBiography
+     
+      }
+
+      showExperience(){
+        this.showMessageExperience = !this.showMessageExperience
+       
+        }
+
+        showMedical(){
+          this.showMessageMedical = !this.showMessageMedical
+         
+          }
   }
 
-}
+
