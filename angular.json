@@ -128,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "matab"
+  "defaultProject": "matab",
+  "cli": {
+    "analytics": "fa3a92d9-6f1b-450c-ae91-7f87c542d502"
+  }
 }

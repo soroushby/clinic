@@ -1,9 +1,53 @@
-.a1{
-    width:30rem;
-    background-color: green;
+
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.2rem;
 }
 
-.a2{
-    width:30rem;
-    background-color: hotpink;
+mat-sidenav-container,
+mat-sidenav-content,
+mat-sidenav {
+  height: 100%;
+  background-color: transparent;
+}
+
+mat-sidenav {
+  width: 250px;
+  background-color: transparent;
+}
+
+a:hover,
+a:active {
+  color: rgb(22, 18, 18);
+}
+
+.nav-caption {
+  display: inline-block;
+  padding-left: 6px;
+}
+
+.sidnav {
+  height: 95vh;
+  background-color: transparent;
+}
+
+.header {
+  background-image: 
+  linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 9) 0%,
+      rgba(255, 255, 255, 9) 40%,
+      transparent 60%
+    ),
+    url(src\assets\birth.jpg);
+  background-size: cover;
+  background-size: 100%;
+  background-position: top;
+  //position: relative;
+}
+
+.btn-position{
+    margin:2rem
 }

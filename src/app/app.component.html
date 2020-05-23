@@ -1,13 +1,45 @@
-<mat-sidenav-container class="example-container" >
+<!-- <mat-sidenav-container class="example-container" >
   <mat-sidenav mode="side"  #sidenav opened>Sidenav content</mat-sidenav>
   <mat-sidenav-content>
     <button mat-raised-button color="primary" (click)="sidenav.toggle()">Primary</button>
   </mat-sidenav-content>
-</mat-sidenav-container>
+</mat-sidenav-container> -->
 
-<div fxLayout="row">
+<!-- <div fxLayout="row">
   <div class="a1">dada</div>
 <div class="a2">dada</div>
-</div>
+</div> -->
+<!-- 
+<div fxLayout="row" class="header">
+  <div class="sidnav">
+    <mat-sidenav-container
+      class="example-container"
+      fxLayoutAlign="start center"
+    >
+      <mat-sidenav #sidenav mode="side" fxLayoutAlign="center center">
+        <mat-nav-list class="margintop">
+          <a mat-list-item routerLink="/home" (click)="sidenav.close()">
+            <mat-icon>home</mat-icon> <span class="nav-caption">Home</span>
+          </a>
+          <a mat-list-item routerLink="/aboutme" (click)="sidenav.close()">
+            <mat-icon>people</mat-icon>
+            <span class="nav-caption">About Me</span>
+          </a>
+          <a mat-list-item routerLink="/contactus" (click)="sidenav.close()">
+            <mat-icon>email</mat-icon>
+            <span class="nav-caption">Contact Me</span>
+          </a>
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <button class="btn-position" mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+ 
+</div> -->
+<<router-outlet></router-outlet>
 
-<router-outlet></router-outlet>
