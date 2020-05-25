@@ -4,42 +4,21 @@
 //     font-size: 2.2rem;
 //   }
 
-mat-sidenav-container,
-mat-sidenav-content,
-mat-sidenav {
-  height: 95vh;
-}
-
-mat-sidenav-container {
-  background-image: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 9) 0%,
-      rgba(255, 255, 255, 9) 40%,
-      transparent 50%
-    ),
-    url(src\assets\birth.jpg);
-  background-size: cover;
-  background-size: 100%;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 95vh;
-}
-
-mat-sidenav {
-  width: 25rem;
-}
-
 //   a:hover,
 //   a:active {
 //     color: rgb(22, 18, 18);
 //   }
 
-//   .nav-caption {
-//     display: inline-block;
-//     padding-left: 6px;
-//   }
+  .nav-caption {
+    display: inline-block;
+    padding-left: 0.6rem;
+    //background-color: rgb(24, 78, 141);
+  }
+
+// .marginleft {
+//   margin-left: 0.4rem;
+//   margin-top: 0;
+// }
 
 //   .sidnav {
 //     height: 95vh;
@@ -69,38 +48,103 @@ mat-sidenav {
 //       margin:2rem;
 //       position: fixed;
 //   }
- mat-card-content{
-    font-size: 1.8rem ;
- }
- .card-button{
-     width:30rem;
- }
-.cards {
- height: 95vh;
-  width: 98%;
-
-}
-
-.card {
-   
-    //transform: translateY(50%);
-  width: 45rem;
-  height: 30rem;
-  
-  background-color: rgba(14, 170, 61, 0.562);
-}
 
 //   .card-button{
 //       width:25rem
 //   }
 
-.fullpage{
-    
-    height: 95vh;
+.fullpage {
+  height: 95vh;
+}
+
+.nav {
+  width: 98%;
+  margin: 2rem;
+  color: snow;
+}
+
+mat-sidenav-container,
+mat-sidenav-content,
+mat-sidenav {
+  height: 95vh;
+}
+
+mat-sidenav-container {
+  // background-image: linear-gradient(
+  //     0deg,
+  //     rgba(255, 255, 255, 9) 0%,
+  //     rgba(255, 255, 255, 9) 40%,
+  //     transparent 40%
+  //   ),
+  //   url(src\assets\birth.jpg);
+  // background-size: cover;
+  // background-size: 100%;
+  // background-position: top;
+  // background-repeat: no-repeat;
+  // height: 95vh;
+
+  border-radius: 6rem 40rem;
+  background: linear-gradient(
+    to right,
+    rgba(61, 128, 204, 0.8),
+    rgba(7, 41, 80, 0.8)
+  ),
+  url(src\assets\birth.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 156rem;
+  height: 76rem;
 
 }
 
-.nav{
-    width: 98%;
-    margin: 2rem;
+mat-sidenav {
+  width: 25rem;
 }
+
+mat-card-content {
+  font-size: 1.8rem;
+}
+
+.card-button {
+  width: 30rem;
+}
+
+.cards {
+  height: 80vh;
+  width: 98%;
+  
+}
+
+.card {
+  transform: translateY(60%);
+  width: 45rem;
+  height: 30rem;
+  background-color: rgb(95, 184, 243);
+  border-radius: 4rem;
+}
+
+.animation {
+    animation-name: moveOnTop;
+    animation-duration: 2s;
+    backface-visibility: hidden;
+    //margin-bottom: 4rem;
+}
+
+@keyframes moveOnTop {
+    0% {
+      opacity: 0.5;
+      transform: translateY(-100px);
+    }
+    60% {
+      opacity: 0.8;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+  .mat-card {
+    color: snow;
+  }
