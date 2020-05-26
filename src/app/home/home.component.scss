@@ -9,12 +9,6 @@
 //     color: rgb(22, 18, 18);
 //   }
 
-  .nav-caption {
-    display: inline-block;
-    padding-left: 0.6rem;
-    //background-color: rgb(24, 78, 141);
-  }
-
 // .marginleft {
 //   margin-left: 0.4rem;
 //   margin-top: 0;
@@ -85,20 +79,21 @@ mat-sidenav-container {
 
   border-radius: 6rem 40rem;
   background: linear-gradient(
-    to right,
-    rgba(61, 128, 204, 0.8),
-    rgba(7, 41, 80, 0.8)
-  ),
-  url(src\assets\birth.jpg);
+      to right,
+      rgba(61, 128, 204, 0.8),
+      rgba(7, 41, 80, 0.8)
+    ),
+    url(src\assets\birth.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 156rem;
   height: 76rem;
-
 }
 
 mat-sidenav {
-  width: 25rem;
+  width: 20rem;
+  height: 25rem;
+  border-radius: 0 0 3rem 0;
 }
 
 mat-card-content {
@@ -112,7 +107,6 @@ mat-card-content {
 .cards {
   height: 80vh;
   width: 98%;
-  
 }
 
 .card {
@@ -124,27 +118,33 @@ mat-card-content {
 }
 
 .animation {
-    animation-name: moveOnTop;
-    animation-duration: 2s;
-    backface-visibility: hidden;
-    //margin-bottom: 4rem;
+  animation-name: moveOnTop;
+  animation-duration: 2s;
+  backface-visibility: hidden;
+  //margin-bottom: 4rem;
 }
 
 @keyframes moveOnTop {
-    0% {
-      opacity: 0.5;
-      transform: translateY(-100px);
-    }
-    60% {
-      opacity: 0.8;
-      transform: translateY(10px);
-    }
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
+  0% {
+    opacity: 0.5;
+    transform: translateY(-100px);
   }
+  60% {
+    opacity: 0.8;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 
-  .mat-card {
-    color: snow;
-  }
+.mat-card {
+  color: snow;
+}
+
+.nav-caption {
+  display: inline-block;
+  padding-left: 0.6rem;
+  //background-color: rgb(24, 78, 141);
+}
