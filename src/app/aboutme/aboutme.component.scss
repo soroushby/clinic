@@ -28,8 +28,8 @@ mat-sidenav-container {
     url(src\assets\about.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 156rem;
-  height: 76rem;
+  // width: 156rem;
+  // height: 76rem;
 }
 
 mat-sidenav {
@@ -78,8 +78,10 @@ mat-sidenav {
 }
 
 .message {
-  color: snow;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.671);
   font-size: 2rem;
+  width: 77rem;
 }
 
 .animation {
@@ -121,6 +123,6 @@ mat-sidenav {
 .items {
   font-size: 2rem;
   //letter-spacing: .3rem;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   font-weight: 400;
 }

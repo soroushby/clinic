@@ -41,10 +41,10 @@
           fxLayoutGap="2rem"
         >
           <div class="image"></div>
-          <p class="message">
+          <p class="name">
             Dr. Mozhgan Daneshvar
           </p>
-          <p class="message">
+          <p class="name">
             Gynecologist And Obstetrician
           </p>
         </mat-card-content>
@@ -101,46 +101,67 @@
             (click)="showEducation()"
           >
             <mat-list-item role="listitem">
-              <mat-icon>add</mat-icon> <p class="items">Education</p>
+              <mat-icon>add</mat-icon>
+              <p class="items">Education</p>
             </mat-list-item>
           </button>
 
-          <div *ngIf="showMessageEducation" class="message">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+          <mat-card *ngIf="showMessageEducation" class="message"
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
             officiis omnis, voluptatibus ipsum iusto fuga soluta nihil ullam
             enim molesti as nobis eveniet error porro consequuntur recusandae
             eum esse accusamus ad?
-          </div>
+          </mat-card>
+
           <button
             mat-raised-button
             class="aboutme-btn"
             (click)="showBiography()"
           >
             <mat-list-item role="listitem">
-              <mat-icon>add</mat-icon><p class="items">Biography</p>
+              <mat-icon>add</mat-icon>
+              <p class="items">Biography</p>
             </mat-list-item>
           </button>
 
-          <div *ngIf="showMessageBiography" class="message">this is test</div>
+          <mat-card *ngIf="showMessageBiography" class="message"
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            officiis omnis, voluptatibus ipsum iusto fuga soluta nihil ullam
+            enim molesti as nobis eveniet error porro consequuntur recusandae
+            eum esse accusamus ad?
+          </mat-card>
+
           <button
             mat-raised-button
             class="aboutme-btn"
             (click)="showExperience()"
           >
             <mat-list-item role="listitem">
-              <mat-icon>add</mat-icon> <p class="items">Experience</p>
+              <mat-icon>add</mat-icon>
+              <p class="items">Experience</p>
             </mat-list-item>
           </button>
 
-          <div *ngIf="showMessageExperience" class="message">this is test</div>
+          <mat-card *ngIf="showMessageExperience" class="message"
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            officiis omnis, voluptatibus ipsum iusto fuga soluta nihil ullam
+            enim molesti as nobis eveniet error porro consequuntur recusandae
+            eum esse accusamus ad?
+          </mat-card>
 
           <button mat-raised-button class="aboutme-btn" (click)="showMedical()">
             <mat-list-item role="listitem">
-              <mat-icon>add</mat-icon> <p class="items">Medical Interests</p>
+              <mat-icon>add</mat-icon>
+              <p class="items">Medical Interests</p>
             </mat-list-item>
           </button>
 
-          <div *ngIf="showMessageMedical" class="message">this is test</div>
+          <mat-card *ngIf="showMessageMedical" class="message">
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            officiis omnis, voluptatibus ipsum iusto fuga soluta nihil ullam
+            enim molesti as nobis eveniet error porro consequuntur recusandae
+            eum esse accusamus ad?
+          </mat-card>
         </mat-list>
       </div>
     </div>
